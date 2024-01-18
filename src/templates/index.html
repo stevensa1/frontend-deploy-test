@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YayaResto</title>
+    <link rel="manifest" href="../manifest.json" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="apple-touch-icon" type="image/png" href="./../public/images/icons/icon96.png" />
+    <link rel="apple-touch-startup-image" type="image/png" href="../images/icons/icon96.png" />
+  </head>
+  <body>
+    <a href="#content" class="skip_link">Skip to content ?</a>
+
+    <!-- Mobile Navbar -->
+    <div class="menu_mobile" id="navbar">
+      <div class="icon_menu" id="menu">
+        <button>&#9776;</button>
+      </div>
+      <div class="logo_mobile">YayaResto</div>
+      <!-- <div class="logo_mobile">&nbsp;</div> -->
+    </div>
+    <nav id="drawer" class="nav_mobile">
+      <ul class="nav_list_mobile">
+        <li class="nav_items_mobile"><a href="/">Home</a></li>
+        <li class="nav_items_mobile"><a href="/#/favorite">Favorite</a></li>
+        <li class="nav_items_mobile">
+          <a target="_blank" rel="noreferrer" href="https://github.com/athayaaqilaa">About Us</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Desktop Navbar -->
+    <nav class="nav" id="navbar_d">
+      <a class="logo" href="/">Yaya Resto</a>
+      <ul class="nav_list">
+        <li class="nav_items"><a href="/">Home</a></li>
+        <li class="nav_items"><a href="/#/favorite">Favorite</a></li>
+        <li class="nav_items">
+          <a target="_blank" rel="noreferrer" href="https://github.com/athayaaqilaa">About Us</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="hero">
+      <picture class="hero-inner">
+        <source media="(max-width: 600px)" srcset="images/heros/hero-image_4-small.jpg" />
+        <img class="hero-image" src="images/heros/hero-image_4-large.jpg" alt="heros" />
+      </picture>
+      <div class="hero_inner">
+        <h1 class="hero_title">Search Your Favorite Menu!</h1>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <main id="content" tabindex="-1"></main>
+
+    <!-- Footer -->
+    <footer>
+      <p>Copyright © 2023 - Dicoding</p>
+    </footer>
+  </body>
+  <script src="https://kit.fontawesome.com/ac9c627fce.js" crossorigin="anonymous"></script>
+  <script>
+    const mobile = document.getElementById('navbar');
+    const desktop = document.getElementById('navbar_d');
+    window.addEventListener('scroll', (event) => {
+      if (window.scrollY >= 150) {
+        mobile.classList.add('scroll');
+        desktop.classList.add('scroll');
+      } else {
+        mobile.classList.remove('scroll');
+        desktop.classList.remove('scroll');
+      }
+    });
+  </script>
+</html>

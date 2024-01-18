@@ -1,0 +1,37 @@
+{
+  "id": "restaurant-apps-pwa-1",
+  "name": "Yaya Restaurant",
+  "short_name": "yaya-restaurant-apps",
+  "description": "Dicoding Restaurant Apps + PWA",
+  "scope": "/",
+  "start_url": "/",
+  "display": "fullscreen",
+  "background_color": "#ffffff",
+  "theme_color": "rgb(233, 87, 147)",
+  "icons": [
+    {
+      "src": "/images/icons/icon72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/icons/icon96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/icons/icon128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/icons/icon256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
